@@ -1,0 +1,24 @@
+<HTML>
+<HEAD>
+<TITLE>konfirmasi</TITLE>
+</HEAD>
+<BODY>
+<SCRIPT LANGUAGE = "JavaScript">
+	var nama = prompt("Saya bisa memangil anda siapa?");
+	if(nama.length == 0){
+   			var ulang = prompt("maaf nama tidak boleh kosong"+
+   			"\nsilahkan masukan nama anda ^_-");
+   			document.write("Hai, " + ulang);
+   		}else{
+   			document.write("Hai, " + nama);
+   		}
+
+   		window.alert("Ini merupakan pesan untuk Anda");
+	var jawaban = window.confirm("Anda ingin meneruskan?");
+	var text = (jawaban == true ) ? "Lanjut" : "batal";
+	document.write("Jawaban Anda: " + text);
+
+	
+</SCRIPT>
+</BODY>
+</HTML>

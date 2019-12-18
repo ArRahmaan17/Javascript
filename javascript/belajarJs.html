@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>penghitung nilai</title>
+</head>
+<body>
+	<script>
+		
+		var nilai = prompt("Nilai (0-100): ", 60);
+		if(nilai == 0){
+			var jawaban = window.confirm("apakah benar nilai anda 0??");
+			if (jawaban == true) {
+				var nilai2 = 0;
+			}else{
+				var nilai2 = prompt("Nilai (0-100): ");
+			}
+			var hasil = (nilai2 > 60) ? "Lulus" : "Tidak Lulus";
+    		document.write("Hasil: " + hasil);
+		}else{
+    	var hasil = (nilai > 60) ? "Lulus" : "Tidak Lulus";
+    		document.write("Hasil: " + hasil);
+    	}
+
+	</script>
+	
+</body>
+</html>
